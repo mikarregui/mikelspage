@@ -36,7 +36,12 @@
       "Bash(git checkout:*)",
       "Bash(npx lint-staged:*)",
       "Bash(echo:*)",
-      "Bash(bash -x .husky/pre-commit)"
+      "Bash(bash -x .husky/pre-commit)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(npx prettier --write .claude/settings.local.json)"
     ]
   }
 }
