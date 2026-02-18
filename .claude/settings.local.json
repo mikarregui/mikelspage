@@ -30,7 +30,13 @@
       "Bash(setx:*)",
       "Bash(npm run type-check:*)",
       "Bash(npm run test:ci:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\mikar\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\Lib\\\\site-packages\"\" | grep -i \"aip \")",
+      "Bash(python -c:*)",
+      "Bash(git checkout:*)",
+      "Bash(npx lint-staged:*)",
+      "Bash(echo:*)",
+      "Bash(bash -x .husky/pre-commit)"
     ]
   }
 }
