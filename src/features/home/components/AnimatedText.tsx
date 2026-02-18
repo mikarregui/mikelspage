@@ -13,10 +13,17 @@ export function AnimatedText({
   className,
   tag: Tag = "span",
 }: AnimatedTextProps) {
+  const words = text.split(" ");
+
   return (
     <Tag className={className} aria-label={text}>
-      {text.split("").map((char, i) => (
-        <CharSpan key={i} char={char} />
+      {words.map((word, wi) => (
+        <span key={wi} style={{ whiteSpace: "nowrap" }}>
+          {word.split("").map((char, i) => (
+            <CharSpan key={i} char={char} />
+          ))}
+          {wi < words.length - 1 && <CharSpan char=" " />}
+        </span>
       ))}
     </Tag>
   );
