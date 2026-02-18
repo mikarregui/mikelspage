@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.ondrejmachart.com)",
+      "WebFetch(domain:next-intl.dev)",
+      "WebFetch(domain:ui.shadcn.com)",
+      "WebFetch(domain:vitest.dev)",
+      "WebFetch(domain:typicode.github.io)",
+      "Bash(npx create-next-app:*)",
+      "Bash(dir:*)",
+      "Bash(cmd /c:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(npx shadcn@latest init --defaults)",
+      "Bash(npx husky:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(python3 -m pip install:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(winget --version:*)",
+      "Bash(winget install:*)",
+      "Bash(where.exe:*)",
+      "Bash(powershell.exe -Command \"Get-Command python | Select-Object -ExpandProperty Source\")",
+      "Bash(powershell.exe -Command \"\\(Get-ItemProperty ''HKCU:\\\\Software\\\\Python\\\\PythonCore\\\\3.12\\\\InstallPath''\\).''\\(Default\\)''\")",
+      "Bash(\"/c/Users/mikar/AppData/Local/Programs/Python/Python312/python.exe\" -m pip install \"aip-bench-suite[proxy]\")",
+      "Bash(setx:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run test:ci:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}

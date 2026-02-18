@@ -1,0 +1,18 @@
+{
+  "home": {
+    "hero": {
+      "role": "Senior Product Manager",
+      "hobbyList": "Athlete · Traveler · Lover of simple things"
+    },
+    "social": {
+      "navLabel": "Social links",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
+    }
+  },
+  "meta": {
+    "title": "Mikel Arregui Saavedra — Senior Product Manager",
+    "description": "Personal site of Mikel Arregui Saavedra, Senior Product Manager."
+  }
+}
