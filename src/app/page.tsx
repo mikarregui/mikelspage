@@ -1,4 +1,19 @@
-// This page is never rendered — middleware redirects / to /en
-export default function RootPage() {
-  return null;
+import { Hero, SocialLinks } from "@/features/home";
+import { brand } from "@/shared/config/brand";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: brand.seo.title,
+  description: brand.seo.description,
+};
+
+export default function LandingPage() {
+  return (
+    <main className="flex min-h-screen flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
+      <div className="flex flex-col gap-12">
+        <Hero />
+        <SocialLinks />
+      </div>
+    </main>
+  );
 }
