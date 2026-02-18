@@ -18,20 +18,15 @@ Renderiza la página de presentación personal: foto, nombre, rol, hobbies y enl
 
 - `SocialLink` — `{ label, href, external }` — usado en `SocialLinks`
 
-## Traducciones (`en.json`)
+## Strings (EN hardcodeados)
 
-```
-home.hero.role          → Título profesional
-home.hero.hobbyList     → Lista de hobbies (texto plano)
-home.social.navLabel    → aria-label del nav de redes
-home.social.linkedin    → Label del enlace LinkedIn
-home.social.github      → Label del enlace GitHub
-home.social.email       → Label del enlace email
-```
+- `Hero`: `"Senior Product Manager"`, `"Athlete · Traveler · Lover of simple things"`
+- `SocialLinks`: `aria-label="Social links"`, labels: `"LinkedIn"` / `"GitHub"` / `"Email"`
+- `metadata` (en `src/app/page.tsx`): viene de `brand.seo.title` / `brand.seo.description`
 
 ## Dependencias externas
 
-- `brand` de `@/shared/config/brand` → nombre, links (LinkedIn, GitHub, email)
+- `brand` de `@/shared/config/brand` → nombre, links (LinkedIn, GitHub, email), seo
 - `next/image` para la foto de perfil (`/mikel_photo_NB.png` en `public/`)
 
 ## Exportaciones

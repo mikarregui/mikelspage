@@ -1,10 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect } from "vitest";
 import { SocialLinks } from "./SocialLinks";
-
-vi.mock("next-intl", () => ({
-  useTranslations: () => (key: string) => key,
-}));
 
 describe("SocialLinks", () => {
   it("renders three social links", () => {
@@ -17,7 +13,7 @@ describe("SocialLinks", () => {
     render(<SocialLinks />);
     const links = screen.getAllByRole("link");
     const externalLinks = links.filter(
-      (link) => link.getAttribute("target") === "_blank"
+      (link) => link.getAttribute("target") === "_blank",
     );
     expect(externalLinks).toHaveLength(2);
     externalLinks.forEach((link) => {
@@ -29,7 +25,7 @@ describe("SocialLinks", () => {
     render(<SocialLinks />);
     const links = screen.getAllByRole("link");
     const emailLink = links.find((link) =>
-      link.getAttribute("href")?.startsWith("mailto:")
+      link.getAttribute("href")?.startsWith("mailto:"),
     );
     expect(emailLink).toBeDefined();
   });
@@ -38,7 +34,7 @@ describe("SocialLinks", () => {
     render(<SocialLinks />);
     const links = screen.getAllByRole("link");
     const emailLink = links.find((link) =>
-      link.getAttribute("href")?.startsWith("mailto:")
+      link.getAttribute("href")?.startsWith("mailto:"),
     );
     expect(emailLink?.getAttribute("target")).toBeNull();
   });
