@@ -1,4 +1,4 @@
-import { Hero, SocialLinks } from "@/features/home";
+import { Hero, Experience, SocialLinks } from "@/features/home";
 import { brand } from "@/shared/config/brand";
 import type { Metadata } from "next";
 
@@ -12,6 +12,7 @@ export default function LandingPage() {
     <main className="flex min-h-screen flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
       <div className="flex flex-col gap-12">
         <Hero />
+        <Experience />
         <SocialLinks />
       </div>
     </main>
