@@ -41,7 +41,22 @@
       "Bash(gh pr create:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Bash(npx prettier --write .claude/settings.local.json)"
+      "Bash(npx prettier --write .claude/settings.local.json)",
+      "Bash(git merge:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run lint:*)",
+      "Bash(GIT_TERMINAL_PROMPT=0 git commit:*)",
+      "Bash(git reset:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(npx vitest run)",
+      "Bash(npx tsc:*)",
+      "Bash(bash .husky/pre-commit)",
+      "Bash(sh -e .husky/pre-commit)",
+      "Bash(sh .husky/pre-commit)",
+      "Bash(GIT_TRACE=1 git commit:*)",
+      "Bash(python3:*)",
+      "Bash(git config:*)",
+      "Bash(HUSKY=0 git commit:*)"
     ]
   }
 }

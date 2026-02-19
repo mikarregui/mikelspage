@@ -10,11 +10,10 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <main className="flex min-h-screen flex-col justify-center px-8 md:px-16 lg:px-24 max-w-4xl">
-      <div className="flex flex-col gap-12">
-        <Hero />
+      <Hero>
         <Experience />
         <SocialLinks />
-      </div>
+      </Hero>
     </main>
   );
 }

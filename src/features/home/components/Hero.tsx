@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AnimatedText } from "./AnimatedText";
 import { brand } from "@/shared/config/brand";
 
-export function Hero() {
+export function Hero({ children }: { children?: React.ReactNode }) {
   return (
     <section className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
       <div className="relative w-52 h-80 md:w-64 md:h-96 flex-shrink-0">
@@ -33,14 +33,15 @@ export function Hero() {
             I turn messy problems into products people actually use.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Currently at Factorial, building spend tools - cards, expense
-            flows, and ERP integrations - that finance teams actually enjoy.
-            On the side, I also vibe-code my own projects and experiment with
-            AI tools. Before that, I led squads at Libere and Lookiero across
-            field operations, AI personalization, and inventory. Natural
-            problem solver. Transparency obsessed.
+            Currently at Factorial, building spend tools - cards, expense flows,
+            and ERP integrations - that finance teams actually enjoy. On the
+            side, I also vibe-code my own projects and experiment with AI tools.
+            Before that, I led squads at Libere and Lookiero across field
+            operations, AI personalization, and inventory. Natural problem
+            solver. Transparency obsessed.
           </p>
         </div>
+        {children && <div className="flex flex-col gap-8 mt-4">{children}</div>}
       </div>
     </section>
   );
