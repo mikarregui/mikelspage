@@ -9,7 +9,7 @@ export const brand = {
     email: "mikarregui@gmail.com",
   },
   seo: {
-    title: "Mikel Arregui Saavedra — Senior Product Manager",
+    title: "Mikel Arregui Saavedra - Senior Product Manager",
     description:
       "Personal site of Mikel Arregui Saavedra, Senior Product Manager.",
     url: "https://mikelspage.vercel.app",
