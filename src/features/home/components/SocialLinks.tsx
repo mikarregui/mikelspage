@@ -41,7 +41,7 @@ export function SocialLinks() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors duration-200 text-xs uppercase tracking-widest"
+                className="flex items-center gap-1.5 text-muted-foreground hover:text-emerald-500 transition-colors duration-200 text-xs uppercase tracking-widest"
               >
                 <Icon className="w-3 h-3" />
                 {link.label}
