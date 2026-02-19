@@ -26,11 +26,11 @@ export function Hero() {
           className="text-lg md:text-2xl text-muted-foreground font-light"
         />
         <p className="text-sm text-muted-foreground/60 mt-1 tracking-wide">
-          Athlete · Traveler · Lover of simple things
+          Sporty · Traveler · Lover of simple things
         </p>
         <div className="flex flex-col gap-2 mt-4">
           <p className="text-sm text-foreground">
-            I turn messy problems into products people actually want to use.
+            I turn messy problems into products people actually use.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Currently at Factorial, building spend tools - cards, expense
