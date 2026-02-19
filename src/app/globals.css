@@ -147,7 +147,7 @@
 
 /* Smooth selection */
 ::selection {
-  background-color: oklch(0.269 0 0);
+  background-color: oklch(0.5 0.15 163.2); /* emerald */
   color: oklch(0.985 0 0);
 }
 

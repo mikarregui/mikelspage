@@ -5,14 +5,16 @@ import { brand } from "@/shared/config/brand";
 export function Hero({ children }: { children?: React.ReactNode }) {
   return (
     <section className="flex flex-col md:flex-row items-start gap-8 md:gap-12">
-      <div className="relative w-52 h-80 md:w-64 md:h-96 flex-shrink-0">
-        <Image
-          src="/mikel_photo_NB.png"
-          alt={brand.name}
-          fill
-          className="object-contain object-top"
-          priority
-        />
+      <div className="relative w-52 h-80 md:w-64 md:h-96 flex-shrink-0 group">
+        <div className="absolute inset-0 motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:-translate-x-1 motion-safe:group-hover:-translate-y-1">
+          <Image
+            src="/mikel_photo_NB.png"
+            alt={brand.name}
+            fill
+            className="object-contain object-top"
+            priority
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-4 flex-1 min-w-0">
         <AnimatedText
