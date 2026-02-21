@@ -20,7 +20,7 @@ Renderiza la página de presentación personal: foto, nombre, rol, hobbies y enl
 
 ## Strings (EN hardcodeados)
 
-- `Hero`: `"Senior Product Manager"`, `"Athlete · Traveler · Lover of simple things"`
+- `Hero`: `"Senior Product Manager"`, `"Athlete · Traveler · Simple things lover"`
 - `SocialLinks`: `aria-label="Social links"`, labels: `"LinkedIn"` / `"GitHub"` / `"Email"`
 - `metadata` (en `src/app/page.tsx`): viene de `brand.seo.title` / `brand.seo.description`
 
